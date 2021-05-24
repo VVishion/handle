@@ -27,7 +27,7 @@ export class Register<T extends Object> {
 	}
 
 	/**
-	 * returns remaining handle count
+	 * @returns remaining handle count
 	 */
 	private unregister(o: T): number {
 		const count = <number>this.handles.get(o) - 1;
