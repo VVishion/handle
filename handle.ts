@@ -5,7 +5,7 @@ export class Handle {
 	public constructor() {
 		this.released = new Promise((release) => {
 			this.release = release;
-		})
+		});
 	}
 }
 
