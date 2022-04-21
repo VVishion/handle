@@ -55,7 +55,7 @@ export function get(id: Id, handle: handle.Handle): undefined | Asset {
 	handles.register(asset, handle).then((count) => {
 		if(count === 0) {
 			asset.destructor();
-			console.log("asset '${asset.id}' removed.");
+			console.log(`asset '${asset.id}' removed.`);
 		}
 	});
 
